@@ -22,11 +22,16 @@ class Employee
     }
 }
 
-class FinalizeDemo
+class FinalizeDemo3
 {
     public static void main(String arg[])
     {
         Employee eobj = new Employee("Amit",78000,28,"Karve Road Pune");
         eobj.Display();
+        String str = "Marvellous";
+
+        System.out.println(eobj.getClass());
+        System.out.println(str.getClass());
+
     }
 }

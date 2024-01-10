@@ -20,13 +20,19 @@ class Employee
         System.out.println("Emplyee Salary : "+this.Salary);
         System.out.println("Emplyee Address : "+this.Address);                       
     }
+
+    public String toString()
+    {
+        return Name+" "+Salary+" "+Age+" "+Address;
+    }
 }
 
-class FinalizeDemo
+class FinalizeDemo5
 {
     public static void main(String arg[])
     {
-        Employee eobj = new Employee("Amit",78000,28,"Karve Road Pune");
-        eobj.Display();
+        Employee eobj1 = new Employee("Amit",78000,28,"Karve Road Pune");
+        
+        System.out.println(eobj1);  // it calls toString method internally
     }
 }
